@@ -2,6 +2,9 @@
 
 note の記事編集画面で、記事タイトルからサムネイル画像を生成して、そのまま note のサムネイルとして挿入する Chrome 拡張です。
 
+Demo video:
+https://www.youtube.com/watch?v=WTzelM_H8NI
+
 ## ダウンロード
 
 1. このリポジトリを ZIP でダウンロードするか、`git clone` で取得します

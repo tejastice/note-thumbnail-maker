@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Note Thumbnail Maker",
+  "version": "1.0.0",
+  "description": "noteの編集画面で固定サムネイルを挿入するChrome拡張",
+  "permissions": [
+    "fontSettings",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://editor.note.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "template/background.jpg",
+        "page-hook.js"
+      ],
+      "matches": [
+        "https://editor.note.com/*"
+      ]
+    }
+  ]
+}
